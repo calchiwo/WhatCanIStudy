@@ -8,7 +8,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import { Menu, Home, Info, AlertCircle, BookmarkedIcon } from 'lucide-react';
+import { Menu, Home, Info, AlertCircle, BookmarkIcon } from 'lucide-react';
 import { useState } from 'react';
 
 export function Header() {
@@ -16,7 +16,7 @@ export function Header() {
 
   const navItems = [
     { href: '/', label: 'Home', icon: Home },
-    { href: '/saved', label: 'Saved Results', icon: BookmarkedIcon },
+    { href: '/saved', label: 'Saved Results', icon: BookmarkIcon },
     { href: '/about', label: 'Methodology', icon: Info },
     { href: '/disclaimer', label: 'Data Disclaimer', icon: AlertCircle },
   ];
