@@ -1,0 +1,123 @@
+[
+  {
+    "id": "legon-cs-001",
+    "institutionName": "University of Ghana (Legon)",
+    "programName": "Computer Science",
+    "programType": "sciences",
+    "duration": "4 years",
+    "requiredSubjects": [
+      { "name": "Mathematics", "minimumGrade": "B3", "isCore": true },
+      { "name": "Physics", "minimumGrade": "B3", "isCore": true },
+      { "name": "English Language", "minimumGrade": "C4", "isCore": true },
+      { "name": "Chemistry", "minimumGrade": "C4", "isCore": false }
+    ],
+    "optionalSubjects": [
+      { "name": "Further Mathematics", "benefitsDescription": "Highly beneficial for advanced courses" },
+      { "name": "Computer Science", "benefitsDescription": "Demonstrates prior knowledge" }
+    ],
+    "minAggregate": 18,
+    "additionalCriteria": "JAMB registration required for international students",
+    "typicalCareerPaths": ["Software Engineer", "Data Scientist", "Systems Administrator", "IT Consultant"],
+    "eligibilityExplanationTemplate": "Computer Science at Legon requires strong mathematics and physics skills.",
+    "dataStatus": "sample",
+    "notes": "Sample data for demonstration. Verify with institution.",
+    "lastUpdatedDate": "2024-12-01",
+    "sourceNote": "Demonstration purposes only. Do not use for actual applications."
+  },
+  {
+    "id": "knust-eng-001",
+    "institutionName": "Kwame Nkrumah University of Science and Technology (KNUST)",
+    "programName": "Electrical Engineering",
+    "programType": "engineering",
+    "duration": "4 years",
+    "requiredSubjects": [
+      { "name": "Mathematics", "minimumGrade": "A2", "isCore": true },
+      { "name": "Physics", "minimumGrade": "B3", "isCore": true },
+      { "name": "Chemistry", "minimumGrade": "B3", "isCore": true },
+      { "name": "English Language", "minimumGrade": "C4", "isCore": false }
+    ],
+    "optionalSubjects": [
+      { "name": "Further Mathematics", "benefitsDescription": "Essential for advanced engineering" },
+      { "name": "Technical Drawing", "benefitsDescription": "Useful practical skill" }
+    ],
+    "minAggregate": 16,
+    "additionalCriteria": "Portfolio or interview may be required",
+    "typicalCareerPaths": ["Electrical Engineer", "Power Systems Engineer", "Telecommunications Engineer"],
+    "eligibilityExplanationTemplate": "Electrical Engineering is highly competitive and requires excellent grades in STEM subjects.",
+    "dataStatus": "sample",
+    "notes": "Sample data for demonstration. Verify with institution.",
+    "lastUpdatedDate": "2024-12-01",
+    "sourceNote": "Demonstration purposes only. Do not use for actual applications."
+  },
+  {
+    "id": "uhas-medicine-001",
+    "institutionName": "University of Health and Allied Sciences (UHAS)",
+    "programName": "Medicine (MD)",
+    "programType": "health-sciences",
+    "duration": "5 years",
+    "requiredSubjects": [
+      { "name": "Biology", "minimumGrade": "A1", "isCore": true },
+      { "name": "Chemistry", "minimumGrade": "A2", "isCore": true },
+      { "name": "Physics", "minimumGrade": "B2", "isCore": true },
+      { "name": "English Language", "minimumGrade": "B3", "isCore": true }
+    ],
+    "optionalSubjects": [
+      { "name": "Mathematics", "benefitsDescription": "Beneficial for statistics in medicine" }
+    ],
+    "minAggregate": 12,
+    "additionalCriteria": "WASSCE grades must be excellent. Interview and aptitude test required. Physical fitness assessment.",
+    "typicalCareerPaths": ["Medical Doctor", "Surgeon", "Physician", "Medical Researcher"],
+    "eligibilityExplanationTemplate": "Medicine is the most competitive program. Excellent grades in science subjects are essential.",
+    "dataStatus": "sample",
+    "notes": "Sample data for demonstration. Verify with institution.",
+    "lastUpdatedDate": "2024-12-01",
+    "sourceNote": "Demonstration purposes only. Do not use for actual applications."
+  },
+  {
+    "id": "ug-business-001",
+    "institutionName": "University of Ghana (Legon)",
+    "programName": "Business Administration",
+    "programType": "business",
+    "duration": "4 years",
+    "requiredSubjects": [
+      { "name": "English Language", "minimumGrade": "B3", "isCore": true },
+      { "name": "Mathematics", "minimumGrade": "C4", "isCore": true },
+      { "name": "Social Studies", "minimumGrade": "C4", "isCore": false },
+      { "name": "Economics", "minimumGrade": "C5", "isCore": false }
+    ],
+    "optionalSubjects": [
+      { "name": "Accounting", "benefitsDescription": "Useful for commerce track" },
+      { "name": "Business Management", "benefitsDescription": "Directly relevant to program" }
+    ],
+    "additionalCriteria": "None specified",
+    "typicalCareerPaths": ["Business Manager", "Entrepreneur", "Financial Analyst", "Management Consultant"],
+    "eligibilityExplanationTemplate": "Business Administration has moderate entry requirements with emphasis on English and Mathematics.",
+    "dataStatus": "sample",
+    "notes": "Sample data for demonstration. Verify with institution.",
+    "lastUpdatedDate": "2024-12-01",
+    "sourceNote": "Demonstration purposes only. Do not use for actual applications."
+  },
+  {
+    "id": "ug-sociology-001",
+    "institutionName": "University of Ghana (Legon)",
+    "programName": "Sociology",
+    "programType": "liberal-arts",
+    "duration": "4 years",
+    "requiredSubjects": [
+      { "name": "English Language", "minimumGrade": "B3", "isCore": true },
+      { "name": "Social Studies", "minimumGrade": "B3", "isCore": true },
+      { "name": "History", "minimumGrade": "C5", "isCore": false }
+    ],
+    "optionalSubjects": [
+      { "name": "Government", "benefitsDescription": "Provides political context" },
+      { "name": "Geography", "benefitsDescription": "Useful for sociodemographic analysis" }
+    ],
+    "additionalCriteria": "None specified",
+    "typicalCareerPaths": ["Social Researcher", "Policy Analyst", "NGO Director", "Community Organizer"],
+    "eligibilityExplanationTemplate": "Sociology focuses on language and humanities skills. Strong English is essential.",
+    "dataStatus": "sample",
+    "notes": "Sample data for demonstration. Verify with institution.",
+    "lastUpdatedDate": "2024-12-01",
+    "sourceNote": "Demonstration purposes only. Do not use for actual applications."
+  }
+]

@@ -1,65 +1,151 @@
-import Image from "next/image";
+import type { Metadata } from 'next';
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
+import { Card } from '@/components/ui/card';
+import { GraduationCap, BookOpen, Zap, Shield } from 'lucide-react';
 
-export default function Home() {
+export const metadata: Metadata = {
+  title: 'WhatCanIStudy: Check University Program Eligibility in Ghana',
+  description: 'Check your eligibility for Ghanaian university programs based on WASSCE grades. Compare 50+ programs from leading institutions including Legon, KNUST, and UHAS.',
+  keywords: 'university eligibility, WASSCE Ghana, program eligibility, Legon, KNUST, UHAS, tertiary education, university admission',
+};
+
+export default function LandingPage() {
+  const schemaData = {
+    '@context': 'https://schema.org',
+    '@type': 'SoftwareApplication',
+    name: 'WhatCanIStudy',
+    applicationCategory: 'EducationalApplication',
+    description: 'Check university program eligibility based on WASSCE grades',
+    url: 'https://whatcanistudy.vercel.app',
+    offers: {
+      '@type': 'Offer',
+      price: '0',
+      priceCurrency: 'USD',
+    },
+  };
+
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
+    <div className="space-y-12">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schemaData) }}
+      />
+      {/* Hero Section */}
+      <section className="space-y-6 py-12 text-center">
+        <div className="space-y-4">
+          <h1 className="text-5xl font-bold text-foreground text-balance">
+            What Can I Study?
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p className="text-xl text-muted-foreground text-pretty max-w-2xl mx-auto">
+            Check your eligibility for university programs in Ghana. Enter your WASSCE grades and discover which programs are a perfect match for you.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        <Link href="/eligibility/input">
+          <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
+            <GraduationCap className="mr-2 h-5 w-5" />
+            Check Your Eligibility
+          </Button>
+        </Link>
+
+        <p className="text-sm text-muted-foreground">
+          Free • No sign-up required • Data for demonstration purposes
+        </p>
+      </section>
+
+      {/* Features */}
+      <section className="space-y-6">
+        <h2 className="text-3xl font-bold text-center text-foreground">How It Works</h2>
+        
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-4">
+          <FeatureCard
+            icon={<BookOpen className="h-8 w-8" />}
+            title="Enter Your Grades"
+            description="Input your WASSCE subject grades and exam details"
+          />
+          <FeatureCard
+            icon={<Zap className="h-8 w-8" />}
+            title="Instant Analysis"
+            description="Get immediate eligibility results for 50+ programs"
+          />
+          <FeatureCard
+            icon={<Shield className="h-8 w-8" />}
+            title="Transparent Logic"
+            description="Understand exactly why you're eligible or not"
+          />
+          <FeatureCard
+            icon={<GraduationCap className="h-8 w-8" />}
+            title="Compare Programs"
+            description="Save and compare your best-matched options"
+          />
         </div>
-      </main>
+      </section>
+
+      {/* Information Section */}
+      <section className="space-y-6">
+        <h2 className="text-3xl font-bold text-center text-foreground">Important Information</h2>
+        
+        <div className="grid md:grid-cols-2 gap-6">
+          <Card className="p-6 space-y-3">
+            <h3 className="font-bold text-lg text-foreground">Sample Data</h3>
+            <p className="text-sm text-muted-foreground">
+              This app uses sample program data for demonstration purposes only. <strong>Always verify eligibility directly with universities</strong> before applying.
+            </p>
+            <Link href="/disclaimer" className="inline-block mt-2">
+              <Button variant="outline" size="sm">
+                View Data Disclaimer
+              </Button>
+            </Link>
+          </Card>
+
+          <Card className="p-6 space-y-3">
+            <h3 className="font-bold text-lg text-foreground">How Eligibility Works</h3>
+            <p className="text-sm text-muted-foreground">
+              We compare your grades against each program's requirements using transparent, rule-based logic. No guessing or probabilities.
+            </p>
+            <Link href="/about" className="inline-block mt-2">
+              <Button variant="outline" size="sm">
+                Learn Methodology
+              </Button>
+            </Link>
+          </Card>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-12 space-y-6 text-center">
+        <div className="space-y-3">
+          <h2 className="text-3xl font-bold text-foreground">Ready to Explore Your Options?</h2>
+          <p className="text-muted-foreground">Get started in just a few minutes</p>
+        </div>
+        <Link href="/eligibility/input">
+          <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
+            <GraduationCap className="mr-2 h-5 w-5" />
+            Check Your Eligibility Now
+          </Button>
+        </Link>
+      </section>
     </div>
+  );
+}
+
+function FeatureCard({
+  icon,
+  title,
+  description,
+}: {
+  icon: React.ReactNode;
+  title: string;
+  description: string;
+}) {
+  return (
+    <Card className="p-6 space-y-3 text-center hover:shadow-md transition-shadow">
+      <div className="flex justify-center text-blue-600">
+        {icon}
+      </div>
+      <h3 className="font-bold text-foreground">{title}</h3>
+      <p className="text-sm text-muted-foreground">{description}</p>
+    </Card>
   );
 }
