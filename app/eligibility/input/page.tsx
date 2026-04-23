@@ -19,12 +19,6 @@ import { DataWarning } from '@/components/shared/DataWarning';
 import { WASSCE_SUBJECTS, GRADE_OPTIONS, STUDY_AREAS, INSTITUTION_TYPES } from '@/lib/data/subjects';
 import { X, Plus } from 'lucide-react';
 
-export const metadata: Metadata = {
-  title: 'Enter Your Grades - WhatCanIStudy',
-  description: 'Enter your WASSCE grades to check your eligibility for Ghanaian university programs. Quick, simple, and free.',
-  keywords: 'WASSCE grades, university eligibility check, program requirements',
-};
-
 export default function GradeInputPage() {
   const router = useRouter();
   const [currentStep, setCurrentStep] = useState(1);
