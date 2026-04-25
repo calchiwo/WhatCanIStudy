@@ -1,6 +1,6 @@
 'use client';
 
-import type { Metadata } from 'next';
+import { Suspense } from 'react';
 import { useEffect, useState } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { Card } from '@/components/ui/card';
@@ -11,13 +11,7 @@ import { Program } from '@/lib/types/program';
 import programsData from '@/lib/data/programs.json';
 import { CheckCircle2, XCircle, Link as LinkIcon } from 'lucide-react';
 
-export const metadata: Metadata = {
-  title: 'Compare Programs - WhatCanIStudy',
-  description: 'Compare university programs side by side to make an informed decision.',
-  keywords: 'compare programs, program comparison, university choice',
-};
-
-export default function ComparisonPage() {
+function ComparisonContent() {
   const router = useRouter();
   const searchParams = useSearchParams();
   const programIds = searchParams.get('programs')?.split(',') || [];
@@ -228,5 +222,13 @@ export default function ComparisonPage() {
         </Button>
       </div>
     </div>
+  );
+}
+
+export default function ComparisonPage() {
+  return (
+    <Suspense fallback={<EmptyState title="Loading..." description="Preparing comparison..." />}>
+      <ComparisonContent />
+    </Suspense>
   );
 }

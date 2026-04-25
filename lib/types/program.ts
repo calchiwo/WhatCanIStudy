@@ -1,3 +1,7 @@
+export interface StudentGrades {
+  [subject: string]: string; // subject name -> grade (e.g., "Mathematics" -> "A1")
+}
+
 export interface RequiredSubject {
   name: string;
   minimumGrade: string; // e.g., "B3", "C4"

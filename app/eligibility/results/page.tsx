@@ -1,6 +1,5 @@
 'use client';
 
-import type { Metadata } from 'next';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { Card } from '@/components/ui/card';
@@ -13,12 +12,6 @@ import { Program, EligibilityResult } from '@/lib/types/program';
 import { evaluateAllPrograms } from '@/lib/services/eligibility';
 import programsData from '@/lib/data/programs.json';
 import { Bookmark, Share2, BarChart3 } from 'lucide-react';
-
-export const metadata: Metadata = {
-  title: 'Your Eligibility Results - WhatCanIStudy',
-  description: 'View your university program eligibility results based on your WASSCE grades.',
-  keywords: 'eligibility results, program match, university requirements',
-};
 
 export default function ResultsPage() {
   const router = useRouter();

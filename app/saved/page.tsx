@@ -1,6 +1,5 @@
 'use client';
 
-import type { Metadata } from 'next';
 import { useEffect, useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
@@ -8,12 +7,6 @@ import { EmptyState } from '@/components/shared/EmptyState';
 import { DataWarning } from '@/components/shared/DataWarning';
 import { Trash2, RotateCcw, Calendar } from 'lucide-react';
 import Link from 'next/link';
-
-export const metadata: Metadata = {
-  title: 'Saved Results: WhatCanIStudy',
-  description: 'View your saved eligibility checks and results history.',
-  keywords: 'saved results, eligibility history, program checks',
-};
 
 interface SavedCheck {
   timestamp: number;

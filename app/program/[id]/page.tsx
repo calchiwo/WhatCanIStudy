@@ -1,6 +1,5 @@
 'use client';
 
-import type { Metadata } from 'next';
 import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
 import { Card } from '@/components/ui/card';
@@ -14,12 +13,6 @@ import { evaluateProgram } from '@/lib/services/eligibility';
 import programsData from '@/lib/data/programs.json';
 import { CheckCircle2, Clock, Briefcase, AlertCircle, Share2 } from 'lucide-react';
 import Link from 'next/link';
-
-export const metadata: Metadata = {
-  title: 'Program Details: WhatCanIStudy',
-  description: 'View detailed program requirements and eligibility criteria.',
-  keywords: 'program requirements, university program, eligibility criteria',
-};
 
 export default function ProgramDetailPage() {
   const params = useParams();
