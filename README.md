@@ -4,6 +4,8 @@ A progressive web app (PWA) that helps Ghanaian students determine which univers
 
 <img width="2535" height="1183" alt="Screenshot 2026-04-27 191347" src="https://github.com/user-attachments/assets/9512cd15-e104-4b09-a773-eb59b27cbf48" />
 
+Live: [https://whatcanistudy.vercel.app](https://whatcanistudy.vercel.app)
+
 ## Overview
 
 WhatCanIStudy provides:
