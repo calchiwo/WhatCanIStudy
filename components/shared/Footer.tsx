@@ -47,7 +47,7 @@ export function Footer() {
         {/* Bottom */}
         <div className="border-t mt-8 pt-6 text-center text-xs text-muted-foreground">
           <p>
-            Last updated: December 2024 | Data Status: Demonstration Only
+            Last updated: April 27, 2026 | Data Status: Demonstration Only
           </p>
         </div>
       </div>

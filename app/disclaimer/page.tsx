@@ -145,7 +145,7 @@ export default function DisclaimerPage() {
       <Card className="p-6 space-y-4">
         <h2 className="text-2xl font-bold text-foreground">Changes to Program Data</h2>
         <p className="text-foreground text-muted-foreground text-sm">
-          University program requirements change frequently. This application may not reflect the most current requirements. The sample program data included here was created on <strong>December 1, 2024</strong> and should be considered outdated.
+          University program requirements change frequently. This application may not reflect the most current requirements. The sample program data included here was created on <strong>April 27, 2026</strong> and should be considered outdated.
         </p>
       </Card>
 
