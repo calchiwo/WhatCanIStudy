@@ -2,7 +2,8 @@
 
 A progressive web app (PWA) that helps Ghanaian and Nigerian students determine which university programs match their WASSCE (West African Senior School Certificate Examination) grades.
 
-<img width="2535" height="1183" alt="Screenshot 2026-04-27 191347" src="https://github.com/user-attachments/assets/9512cd15-e104-4b09-a773-eb59b27cbf48" />
+<img width="2533" height="1174" alt="Screenshot 2026-04-29 162423" src="https://github.com/user-attachments/assets/d6c2c8ff-9bf4-4e02-b47c-d11bc7f63775" />
+
 
 Live: [https://whatcanistudy.vercel.app](https://whatcanistudy.vercel.app)
 
