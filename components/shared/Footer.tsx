@@ -9,7 +9,7 @@ export function Footer() {
           <div>
             <h3 className="font-bold text-foreground mb-3">WhatCanIStudy</h3>
             <p className="text-sm text-muted-foreground">
-              A progressive web app helping Ghanaian students determine university program eligibility based on WASSCE grades.
+              A progressive web app helping students in Ghana and Nigeria determine university program eligibility based on WASSCE grades.
             </p>
           </div>
 
@@ -45,9 +45,12 @@ export function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="border-t mt-8 pt-6 text-center text-xs text-muted-foreground">
+        <div className="border-t mt-8 pt-6 text-center text-xs text-muted-foreground space-y-2">
           <p>
-            Last updated: April 27, 2026 | Data Status: Demonstration Only
+            Last updated: April 2026 | Data Status: Demonstration Only
+          </p>
+          <p>
+            Built by <Link href="https://github.com/calchiwo" className="text-blue-600 hover:underline">Caleb Wodi</Link>
           </p>
         </div>
       </div>

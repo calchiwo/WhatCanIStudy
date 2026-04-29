@@ -1,7 +1,7 @@
 {
   "name": "WhatCanIStudy - University Program Eligibility Checker",
   "short_name": "WhatCanIStudy",
-  "description": "Check your eligibility for Ghanaian university programs based on your WASSCE grades",
+  "description": "Check your eligibility for university programs in Ghana and Nigeria based on your WASSCE grades",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

@@ -8,23 +8,23 @@ const _geist = Geist({ subsets: ["latin"] });
 const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'WhatCanIStudy - University Program Eligibility Checker for Ghana',
-  description: 'Check your eligibility for Ghanaian university programs based on your WASSCE grades. Find the right program for you.',
-  keywords: 'university eligibility, WASSCE, Ghana, program eligibility, tertiary education',
+  title: 'WhatCanIStudy: University Program Eligibility Checker for Ghana and Nigeria',
+  description: 'Check your eligibility for university programs in Ghana and Nigeria based on your WASSCE grades. Find the right program for you.',
+  keywords: 'university eligibility, WASSCE, Ghana, Nigeria, program eligibility, tertiary education',
   applicationName: 'WhatCanIStudy',
   authors: [{ name: 'WhatCanIStudy' }],
   openGraph: {
     type: 'website',
     locale: 'en_GH',
     url: 'https://whatcanistudy.vercel.app',
-    title: 'WhatCanIStudy - University Program Eligibility Checker',
-    description: 'Check your eligibility for Ghanaian university programs based on your WASSCE grades.',
+    title: 'WhatCanIStudy: University Program Eligibility Checker for Ghana and Nigeria',
+    description: 'Check your eligibility for university programs in Ghana and Nigeria based on your WASSCE grades.',
     siteName: 'WhatCanIStudy',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'WhatCanIStudy - University Program Eligibility Checker',
-    description: 'Check your eligibility for Ghanaian university programs based on your WASSCE grades.',
+    title: 'WhatCanIStudy: University Program Eligibility Checker for Ghana and Nigeria',
+    description: 'Check your eligibility for university programs in Ghana and Nigeria based on your WASSCE grades.',
   },
   alternates: {
     canonical: 'https://whatcanistudy.vercel.app',

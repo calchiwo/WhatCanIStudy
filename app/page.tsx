@@ -5,9 +5,9 @@ import { Card } from '@/components/ui/card';
 import { GraduationCap, BookOpen, Zap, Shield } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'WhatCanIStudy: Check University Program Eligibility in Ghana',
-  description: 'Check your eligibility for Ghanaian university programs based on WASSCE grades. Compare 50+ programs from leading institutions including Legon, KNUST, and UHAS.',
-  keywords: 'university eligibility, WASSCE Ghana, program eligibility, Legon, KNUST, UHAS, tertiary education, university admission',
+  title: 'WhatCanIStudy: Check University Program Eligibility in Ghana and Nigeria',
+  description: 'Check your eligibility for university programs in Ghana and Nigeria based on WASSCE grades. Compare programs from leading institutions.',
+  keywords: 'university eligibility, WASSCE, Ghana, Nigeria, program eligibility, tertiary education, university admission',
 };
 
 export default function LandingPage() {
@@ -38,7 +38,7 @@ export default function LandingPage() {
             What Can I Study?
           </h1>
           <p className="text-xl text-muted-foreground text-pretty max-w-2xl mx-auto">
-            Check your eligibility for university programs in Ghana. Enter your WASSCE grades and discover which programs are a perfect match for you.
+            Check your eligibility for university programs in Ghana and Nigeria. Enter your WASSCE grades and discover which programs are a perfect match for you.
           </p>
         </div>
 

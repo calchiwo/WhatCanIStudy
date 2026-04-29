@@ -24,7 +24,7 @@ export default function AboutPage() {
       <Card className="p-6 space-y-4">
         <h2 className="text-2xl font-bold text-foreground">What Is WhatCanIStudy?</h2>
         <p className="text-foreground leading-relaxed">
-          WhatCanIStudy is a tool that helps Ghanaian students understand which university programs match their WASSCE (West African Senior School Certificate Examination) grades. It compares your grades against publicly available program requirements to provide instant eligibility insights.
+          WhatCanIStudy helps students in Ghana and Nigeria understand which university programs match their WASSCE (West African Senior School Certificate Examination) grades. It compares your grades against publicly available program requirements to provide instant eligibility insights.
         </p>
       </Card>
 
