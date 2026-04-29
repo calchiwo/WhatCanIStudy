@@ -15,12 +15,13 @@ import {
 import { Card } from '@/components/ui/card';
 import { FormStepCard } from '@/components/forms/FormStepCard';
 import { DataWarning } from '@/components/shared/DataWarning';
-import { WASSCE_SUBJECTS, GRADE_OPTIONS, STUDY_AREAS, INSTITUTION_TYPES } from '@/lib/data/subjects';
+import { WASSCE_SUBJECTS, GRADE_OPTIONS, STUDY_AREAS, INSTITUTION_TYPES, COUNTRIES } from '@/lib/data/subjects';
 import { X, Plus } from 'lucide-react';
 
 export default function GradeInputPage() {
   const router = useRouter();
   const [currentStep, setCurrentStep] = useState(1);
+  const [country, setCountry] = useState('');
   const [examType, setExamType] = useState('wassce');
   const [studyArea, setStudyArea] = useState('');
   const [institutionType, setInstitutionType] = useState('any');
@@ -51,15 +52,19 @@ export default function GradeInputPage() {
   };
 
   const validateStep = () => {
-    if (currentStep === 1 && !examType) {
+    if (currentStep === 1 && !country) {
+      setError('Please select your country');
+      return false;
+    }
+    if (currentStep === 2 && !examType) {
       setError('Please select an exam type');
       return false;
     }
-    if (currentStep === 2 && !studyArea) {
+    if (currentStep === 3 && !studyArea) {
       setError('Please select a study area');
       return false;
     }
-    if (currentStep === 3) {
+    if (currentStep === 4) {
       // Validate grades
       const emptyGrades = grades.filter((g) => !g.subject || !g.grade);
       if (emptyGrades.length > 0) {
@@ -103,6 +108,7 @@ export default function GradeInputPage() {
     try {
       // Store the form data in session storage for the results page
       const formData = {
+        country,
         subjects: Object.fromEntries(grades.map((g) => [g.subject, g.grade])),
         examType,
         intendedStudyArea: studyArea,
@@ -127,7 +133,27 @@ export default function GradeInputPage() {
       />
 
       {currentStep === 1 && (
-        <FormStepCard stepNumber={1} totalSteps={4} title="Exam Type" description="What exam did you take?">
+        <FormStepCard stepNumber={1} totalSteps={4} title="Select Your Country" description="Where are you studying?">
+          <div className="space-y-3">
+            <Label htmlFor="country">Country</Label>
+            <Select value={country} onValueChange={setCountry}>
+              <SelectTrigger id="country">
+                <SelectValue placeholder="Choose your country..." />
+              </SelectTrigger>
+              <SelectContent>
+                {COUNTRIES.map((c) => (
+                  <SelectItem key={c.value} value={c.value}>
+                    {c.label}
+                  </SelectItem>
+                ))}
+              </SelectContent>
+            </Select>
+          </div>
+        </FormStepCard>
+      )}
+
+      {currentStep === 2 && (
+        <FormStepCard stepNumber={2} totalSteps={4} title="Exam Type" description="What exam did you take?">
           <div className="space-y-3">
             <Label htmlFor="exam-type">Exam Type</Label>
             <Select value={examType} onValueChange={setExamType}>
@@ -143,9 +169,9 @@ export default function GradeInputPage() {
         </FormStepCard>
       )}
 
-      {currentStep === 2 && (
+      {currentStep === 3 && (
         <FormStepCard
-          stepNumber={2}
+          stepNumber={3}
           totalSteps={4}
           title="Study Area"
           description="What do you want to study? (Optional but helpful)"
@@ -168,9 +194,9 @@ export default function GradeInputPage() {
         </FormStepCard>
       )}
 
-      {currentStep === 3 && (
+      {currentStep === 4 && (
         <FormStepCard
-          stepNumber={3}
+          stepNumber={4}
           totalSteps={4}
           title="Your Grades"
           description="Enter all the subjects and grades from your exam"

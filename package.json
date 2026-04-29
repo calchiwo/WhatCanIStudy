@@ -1,7 +1,7 @@
 {
   "name": "whatcanistudy",
   "version": "1.0.0",
-  "description": "University program eligibility checker for Ghanaian students",
+  "description": "University program eligibility checker for students in Ghana and Nigeria",
   "private": true,
   "scripts": {
     "dev": "next dev",

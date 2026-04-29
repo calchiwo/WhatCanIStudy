@@ -1,6 +1,7 @@
 [
   {
     "id": "legon-cs-001",
+    "country": "Ghana",
     "institutionName": "University of Ghana (Legon)",
     "programName": "Computer Science",
     "programType": "sciences",
@@ -26,6 +27,7 @@
   },
   {
     "id": "knust-eng-001",
+    "country": "Ghana",
     "institutionName": "Kwame Nkrumah University of Science and Technology (KNUST)",
     "programName": "Electrical Engineering",
     "programType": "engineering",
@@ -51,6 +53,7 @@
   },
   {
     "id": "uhas-medicine-001",
+    "country": "Ghana",
     "institutionName": "University of Health and Allied Sciences (UHAS)",
     "programName": "Medicine (MD)",
     "programType": "health-sciences",
@@ -75,6 +78,7 @@
   },
   {
     "id": "ug-business-001",
+    "country": "Ghana",
     "institutionName": "University of Ghana (Legon)",
     "programName": "Business Administration",
     "programType": "business",
@@ -99,6 +103,7 @@
   },
   {
     "id": "ug-sociology-001",
+    "country": "Ghana",
     "institutionName": "University of Ghana (Legon)",
     "programName": "Sociology",
     "programType": "liberal-arts",
@@ -118,6 +123,136 @@
     "dataStatus": "sample",
     "notes": "Sample data for demonstration. Verify with institution.",
     "lastUpdatedDate": "2024-12-01",
+    "sourceNote": "Demonstration purposes only. Do not use for actual applications."
+  },
+  {
+    "id": "ui-medicine-ng-001",
+    "country": "Nigeria",
+    "institutionName": "University of Ibadan",
+    "programName": "Medicine (MBBS)",
+    "programType": "health-sciences",
+    "duration": "6 years",
+    "requiredSubjects": [
+      { "name": "English Language", "minimumGrade": "A1", "isCore": true },
+      { "name": "Mathematics", "minimumGrade": "B2", "isCore": true },
+      { "name": "Physics", "minimumGrade": "A1", "isCore": true },
+      { "name": "Chemistry", "minimumGrade": "A1", "isCore": true },
+      { "name": "Biology", "minimumGrade": "A1", "isCore": true }
+    ],
+    "optionalSubjects": [
+      { "name": "Further Mathematics", "benefitsDescription": "Beneficial for medical calculations" }
+    ],
+    "minAggregate": 12,
+    "additionalCriteria": "JAMB score minimum 180. Post-UTME examination required. Excellent overall performance.",
+    "typicalCareerPaths": ["Medical Doctor", "Surgeon", "Physician", "Medical Researcher", "Hospital Administrator"],
+    "eligibilityExplanationTemplate": "Medicine at UI is highly competitive. Excellent grades in all core sciences are essential. JAMB and UTME performance are critical.",
+    "dataStatus": "sample",
+    "notes": "Sample data for demonstration. Verify with University of Ibadan admissions office.",
+    "lastUpdatedDate": "2026-04-01",
+    "sourceNote": "Demonstration purposes only. Do not use for actual applications."
+  },
+  {
+    "id": "abu-engineering-ng-001",
+    "country": "Nigeria",
+    "institutionName": "Ahmadu Bello University (ABU)",
+    "programName": "Civil Engineering",
+    "programType": "engineering",
+    "duration": "5 years",
+    "requiredSubjects": [
+      { "name": "English Language", "minimumGrade": "B3", "isCore": true },
+      { "name": "Mathematics", "minimumGrade": "A1", "isCore": true },
+      { "name": "Physics", "minimumGrade": "A2", "isCore": true },
+      { "name": "Chemistry", "minimumGrade": "B2", "isCore": true }
+    ],
+    "optionalSubjects": [
+      { "name": "Further Mathematics", "benefitsDescription": "Essential for advanced engineering courses" },
+      { "name": "Technical Drawing", "benefitsDescription": "Practical engineering skill" }
+    ],
+    "minAggregate": 14,
+    "additionalCriteria": "JAMB score minimum 160. Post-UTME examination required.",
+    "typicalCareerPaths": ["Civil Engineer", "Structural Engineer", "Project Manager", "Construction Manager"],
+    "eligibilityExplanationTemplate": "Civil Engineering requires strong mathematics and physics foundations. Competitive entry with emphasis on JAMB and UTME results.",
+    "dataStatus": "sample",
+    "notes": "Sample data for demonstration. Verify with ABU admissions office.",
+    "lastUpdatedDate": "2026-04-01",
+    "sourceNote": "Demonstration purposes only. Do not use for actual applications."
+  },
+  {
+    "id": "unilag-cs-ng-001",
+    "country": "Nigeria",
+    "institutionName": "University of Lagos (UNILAG)",
+    "programName": "Computer Science",
+    "programType": "sciences",
+    "duration": "4 years",
+    "requiredSubjects": [
+      { "name": "English Language", "minimumGrade": "B3", "isCore": true },
+      { "name": "Mathematics", "minimumGrade": "A2", "isCore": true },
+      { "name": "Physics", "minimumGrade": "B2", "isCore": true },
+      { "name": "Chemistry", "minimumGrade": "C4", "isCore": false }
+    ],
+    "optionalSubjects": [
+      { "name": "Further Mathematics", "benefitsDescription": "Beneficial for algorithms and data structures" },
+      { "name": "Computer Science", "benefitsDescription": "Demonstrates prior computing knowledge" }
+    ],
+    "minAggregate": 16,
+    "additionalCriteria": "JAMB score minimum 150. Post-UTME examination required.",
+    "typicalCareerPaths": ["Software Engineer", "Data Scientist", "Systems Administrator", "IT Consultant", "Game Developer"],
+    "eligibilityExplanationTemplate": "Computer Science at UNILAG requires strong mathematics and physics. Competitive program with good JAMB/UTME scores needed.",
+    "dataStatus": "sample",
+    "notes": "Sample data for demonstration. Verify with UNILAG admissions office.",
+    "lastUpdatedDate": "2026-04-01",
+    "sourceNote": "Demonstration purposes only. Do not use for actual applications."
+  },
+  {
+    "id": "oau-business-ng-001",
+    "country": "Nigeria",
+    "institutionName": "Obafemi Awolowo University (OAU)",
+    "programName": "Business Administration",
+    "programType": "business",
+    "duration": "4 years",
+    "requiredSubjects": [
+      { "name": "English Language", "minimumGrade": "B3", "isCore": true },
+      { "name": "Mathematics", "minimumGrade": "C4", "isCore": true },
+      { "name": "Economics", "minimumGrade": "C5", "isCore": true },
+      { "name": "Social Studies", "minimumGrade": "C5", "isCore": false }
+    ],
+    "optionalSubjects": [
+      { "name": "Accounting", "benefitsDescription": "Useful for accounting courses in program" },
+      { "name": "Geography", "benefitsDescription": "Helpful for business geography modules" }
+    ],
+    "minAggregate": 18,
+    "additionalCriteria": "JAMB score minimum 140. Post-UTME examination required.",
+    "typicalCareerPaths": ["Business Manager", "Entrepreneur", "Financial Analyst", "Marketing Manager", "Management Consultant"],
+    "eligibilityExplanationTemplate": "Business Administration has moderate entry requirements. English proficiency and basic mathematics are essential. JAMB/UTME performance matters.",
+    "dataStatus": "sample",
+    "notes": "Sample data for demonstration. Verify with OAU admissions office.",
+    "lastUpdatedDate": "2026-04-01",
+    "sourceNote": "Demonstration purposes only. Do not use for actual applications."
+  },
+  {
+    "id": "uniben-law-ng-001",
+    "country": "Nigeria",
+    "institutionName": "University of Benin (UNIBEN)",
+    "programName": "Law (LLB)",
+    "programType": "liberal-arts",
+    "duration": "5 years",
+    "requiredSubjects": [
+      { "name": "English Language", "minimumGrade": "A1", "isCore": true },
+      { "name": "Social Studies", "minimumGrade": "A2", "isCore": true },
+      { "name": "History", "minimumGrade": "B2", "isCore": false },
+      { "name": "Government", "minimumGrade": "B2", "isCore": false }
+    ],
+    "optionalSubjects": [
+      { "name": "Economics", "benefitsDescription": "Useful for commercial law" },
+      { "name": "Literature in English", "benefitsDescription": "Develops writing and analytical skills" }
+    ],
+    "minAggregate": 14,
+    "additionalCriteria": "JAMB score minimum 150. Post-UTME examination required. Excellent writing and communication skills essential.",
+    "typicalCareerPaths": ["Lawyer", "Judge", "Legal Consultant", "Prosecutor", "Law Professor"],
+    "eligibilityExplanationTemplate": "Law requires excellent English and strong social sciences background. Competitive entry with emphasis on JAMB/UTME results.",
+    "dataStatus": "sample",
+    "notes": "Sample data for demonstration. Verify with UNIBEN admissions office.",
+    "lastUpdatedDate": "2026-04-01",
     "sourceNote": "Demonstration purposes only. Do not use for actual applications."
   }
 ]

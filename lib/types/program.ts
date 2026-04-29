@@ -15,6 +15,7 @@ export interface OptionalSubject {
 
 export interface Program {
   id: string;
+  country: 'Ghana' | 'Nigeria';
   institutionName: string;
   programName: string;
   programType: 'engineering' | 'liberal-arts' | 'health-sciences' | 'business' | 'sciences' | 'education';
@@ -54,6 +55,7 @@ export interface EligibilityResult {
 }
 
 export interface EligibilityCheckResult {
+  country: 'Ghana' | 'Nigeria';
   studentGrades: StudentGrades;
   allResults: EligibilityResult[];
   eligiblePrograms: EligibilityResult[];

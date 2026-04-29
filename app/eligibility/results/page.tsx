@@ -16,6 +16,7 @@ import { Bookmark, Share2, BarChart3 } from 'lucide-react';
 export default function ResultsPage() {
   const router = useRouter();
   const [studentGrades, setStudentGrades] = useState<StudentGrades | null>(null);
+  const [country, setCountry] = useState<'Ghana' | 'Nigeria' | null>(null);
   const [programs, setPrograms] = useState<Program[]>([]);
   const [eligiblePrograms, setEligiblePrograms] = useState<EligibilityResult[]>([]);
   const [closeMatches, setCloseMatches] = useState<EligibilityResult[]>([]);
@@ -40,9 +41,12 @@ export default function ResultsPage() {
         preferredInstitutionType: parsed.preferredInstitutionType,
       };
       setStudentGrades(studentData);
+      setCountry(parsed.country);
 
-      // Cast programsData to Program[]
-      const typedPrograms = programsData as unknown as Program[];
+      // Cast programsData to Program[] and filter by country
+      const typedPrograms = (programsData as unknown as Program[]).filter(
+        (p) => p.country === parsed.country
+      );
       setPrograms(typedPrograms);
 
       // Evaluate all programs
@@ -137,6 +141,17 @@ export default function ResultsPage() {
         title="Sample Data Results"
         message="These results are based on sample program data. Always contact institutions directly to verify your eligibility before applying."
       />
+
+      {/* Country Header */}
+      <div className="flex items-center justify-between">
+        <div>
+          <h1 className="text-3xl font-bold text-foreground">Your Eligibility Results</h1>
+          <p className="text-muted-foreground mt-2">Institutions in {country}</p>
+        </div>
+        <Button variant="outline" onClick={() => router.push('/eligibility/input')}>
+          Check Again
+        </Button>
+      </div>
 
       {/* Summary Stats */}
       <Card className="p-6 bg-gradient-to-r from-blue-50 to-indigo-50 border-blue-200">

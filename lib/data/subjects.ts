@@ -68,3 +68,8 @@ export const INSTITUTION_TYPES = [
   { value: 'private', label: 'Private University' },
   { value: 'any', label: 'Any' },
 ];
+
+export const COUNTRIES = [
+  { value: 'Ghana', label: 'Ghana' },
+  { value: 'Nigeria', label: 'Nigeria' },
+];
